@@ -1,13 +1,13 @@
-(ns samplewebapp.webcontroller
-  (:use ring.adapter.jetty)
-  (:use samplewebapp.routes)
-  (:require [compojure.handler :as handler]))
+(ns samplewebapp.mainheroku
+  (:use ring.adapter.jetty))
+;  (:use samplewebapp.routes)
+;  (:require [compojure.handler :as handler]))
 ; Ring provides that adapter to Jetty and the underlying HTTP requests and responses.
 ; Difference to main-local.clj is that automatic reloading and browser stacktrace is not available under Heroku.
 
-(def app-heroku
-	(-> #'main-routes ; use the routes defined in main-routes 
-	    (handler/api)))  ; neccessary to access the form data in the paramter style way in the route definitions
+;(def app-heroku
+;	(-> #'main-routes ; use the routes defined in main-routes 
+;	    (handler/api)))  ; neccessary to access the form data in the paramter style way in the route definitions
 
 (defn app [req]
   {:status 200
