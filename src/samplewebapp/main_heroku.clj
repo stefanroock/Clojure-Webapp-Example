@@ -1,4 +1,4 @@
-(ns samplewebapp.mainheroku
+(ns samplewebapp.main-heroku
   (:use ring.adapter.jetty)
   (:use samplewebapp.routes)
   (:require [compojure.handler :as handler]))
