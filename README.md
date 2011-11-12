@@ -8,7 +8,7 @@ Get Started
 * lein repl
 * (use 'samplewebbapp.webcontroller)
 * (boot)
-* Open http://localhost:808 in your web browser: you should see a welcome message. For other URLs to try take a look into routes.clj
+* Open http://localhost:8080 in your web browser: you should see a welcome message. For other URLs to try take a look into routes.clj
 
 License
 -------
