@@ -16,4 +16,4 @@
 
 (defn -main []
   (let [port (Integer/parseInt (System/getenv "PORT"))]
-    (run-jetty app {:port port}))) ; run on Heroku
+    (run-jetty app-heroku {:port port}))) ; run on Heroku
