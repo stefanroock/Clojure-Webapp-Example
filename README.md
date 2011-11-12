@@ -12,7 +12,11 @@ Get Started
 
 Run on Heroku
 -------------
+First create a new app at Heroku with the cedar stack: heroku create --stack cedar <my-app-name>
+
 To run the webapp with Heroku we need the Procfile file and the main method in webcontroller.clj.
+
+Here is a description of how to run Clojure apps on Heroku: http://blog.heroku.com/archives/2011/7/5/clojure_on_heroku/
 
 License
 -------

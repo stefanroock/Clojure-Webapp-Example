@@ -12,9 +12,14 @@
 	    (wrap-reload '(samplewebapp.webcontroller samplewebapp.routes samplewebapp.actions)) ; reload automatically
 	    (wrap-stacktrace))) ; show stacktrace in browser when exceptions are thrown in the server
 
+(def app-heroku
+	(-> #'main-routes ; use the routes defined in main-routes 
+	    (handler/api)  ; neccessary to access the form data in the paramter style way in the route definitions
+	    (wrap-stacktrace))) ; show stacktrace in browser when exceptions are thrown in the server
+
 (defn boot []
 	(run-jetty #'app-auto-reload {:port 8080})) ; start Jetty webserver
 
 (defn -main []
   (let [port (Integer/parseInt (System/getenv "PORT"))]
-    (run-jetty app-auto-reload {:port port})))
+    (run-jetty app-heroku {:port port}))) ; run on Heroku
