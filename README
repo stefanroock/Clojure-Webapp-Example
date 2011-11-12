@@ -1,9 +1,0 @@
-A simple Clojure webapp that shows how to use Jetty, Ring, Compojure and Hiccup to build a web application.
-
-To get started:
-* lein deps
-* lein repl
-* (use 'samplewebbapp.webcontroller)
-* (boot)
-* Open http://localhost:808 in your web browser: you should see a welcome message. For other URLs to try take a look into routes.clj
-
