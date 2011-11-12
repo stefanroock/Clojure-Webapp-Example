@@ -1,6 +1,7 @@
 A simple Clojure webapp that shows how to use Jetty, Ring, Compojure and Hiccup to build a web application.
 
 To get started:
+* lein deps
 * lein repl
 * (use 'samplewebbapp.webcontroller)
 * (boot)

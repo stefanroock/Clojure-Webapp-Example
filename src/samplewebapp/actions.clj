@@ -1,6 +1,7 @@
 (ns samplewebapp.actions
-  (:use hiccup.core)
+  (:use hiccup.core) 
   (:use hiccup.form-helpers))
+; Hiccup does the HTML generation part
 
 (defn layout [title & body]
 	  (html
