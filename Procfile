@@ -1,1 +1,1 @@
-web: lein run -m samplewebapp.mainheroku
+web: lein run -m samplewebapp.main-heroku
