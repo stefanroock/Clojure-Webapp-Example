@@ -1,1 +1,1 @@
-web: lein run -m samplewebapp.webcontroller
+web: lein run -m samplewebapp.main-heroku
