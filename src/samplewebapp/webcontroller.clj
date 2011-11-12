@@ -14,3 +14,7 @@
 
 (defn boot []
 	(run-jetty #'app-auto-reload {:port 8080})) ; start Jetty webserver
+
+(defn -main []
+  (let [port (Integer/parseInt (System/getenv "PORT"))]
+    (run-jetty app-auto-reload {:port port})))

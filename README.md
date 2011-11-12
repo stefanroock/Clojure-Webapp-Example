@@ -10,6 +10,10 @@ Get Started
 * (boot)
 * Open http://localhost:8080 in your web browser: you should see a welcome message. For other URLs to try take a look into routes.clj
 
+Run on Heroku
+-------------
+To run the webapp with Heroku we need the Procfile file and the main method in webcontroller.clj.
+
 License
 -------
 This program is free software. It comes without any warranty, to
