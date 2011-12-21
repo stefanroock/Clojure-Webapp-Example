@@ -7,7 +7,8 @@
 
 (def app-heroku
 	(-> #'main-routes ; use the routes defined in main-routes 
-	    (handler/api)))  ; neccessary to access the form data in the paramter style way in the route definitions
+	    (handler/api) ; neccessary to access the form data in the paramter style way in the route definitions
+      (wrap-file "public"))) ; serve static files from directory 'public'
 
 (defn -main []
   (let [port (Integer/parseInt (System/getenv "PORT"))]

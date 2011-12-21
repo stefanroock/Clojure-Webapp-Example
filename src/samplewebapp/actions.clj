@@ -10,7 +10,10 @@
 
 (defn welcome-page []
 	(layout "Welcome to Clojure Sample Webapp"
-	  [:p "The webapp shows how to use Clojure with Jetty, Ring, Compojure and Hiccup to build a web application."]))
+	  [:p "The webapp shows how to use Clojure with Jetty, Ring, Compojure and Hiccup to build a web application."]
+	  [:p "See routes.clj for the valid routes."]
+	  [:h3 "Author: Stefan Roock, EMail: stefan.roock@it-agile.de, Twitter: StefanRoock"]
+	  [:img {:src "sr.jpg"}]))
 
 (defn full-name [first second]
 	(layout "Full Name" (str first " " second)))
