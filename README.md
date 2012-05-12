@@ -8,6 +8,7 @@ Get Started
 * lein repl
 * (use 'samplewebapp.main-local)
 * (boot)
+* export PORT=8080 (the app reads this in from the environment).
 * Open http://localhost:8080 in your web browser: you should see a welcome message. For other URLs to try take a look into routes.clj.
 
 Run on Heroku
@@ -17,6 +18,12 @@ First create a new app at Heroku with the cedar stack: heroku create --stack ced
 To run the webapp with Heroku we need the Procfile file and main-heroku.clj.
 
 Here is a description of how to run Clojure apps on Heroku: http://blog.heroku.com/archives/2011/7/5/clojure_on_heroku/
+
+Customize it !
+--------------
+(Optional - replace the "samplewebapp" strings with your web app's name). 
+find . -type f -print0 | xargs -0 sed -i 's/samplewebapp/myAppName/g'
+
 
 License
 -------
