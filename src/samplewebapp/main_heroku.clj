@@ -1,6 +1,7 @@
 (ns samplewebapp.main-heroku
   (:use ring.adapter.jetty)
   (:use samplewebapp.routes)
+  (:use ring.middleware.file)
   (:require [compojure.handler :as handler]))
 ; Ring provides that adapter to Jetty and the underlying HTTP requests and responses.
 ; Difference to main-local.clj is that automatic reloading and browser stacktrace is not available under Heroku.
