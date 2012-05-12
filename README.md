@@ -12,8 +12,8 @@ Get Started
 
 Running it locally with lein
 ----------------------------
-export PORT=8000
-lein run -m samplewebapp.main-heroku
+* export PORT=8000
+* lein run -m samplewebapp.main-heroku
 
 Run on Heroku
 -------------
